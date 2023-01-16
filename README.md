@@ -12,7 +12,7 @@
 ## 作法架構  
 1. **資料取得與儲存：Python (本篇內容)**
 2. [資料清理與處理：MYSQL](https://github.com/dujun101620/591RENT-PART2-Data_Processing)
-3. 視覺化圖表分析：Power BI
+3. [視覺化圖表分析：Power BI](https://github.com/dujun101620/591RENT-PART3-Data_Visualization)
 
 ## 程式內容──資料取得與儲存：Python  
 以台北市為例說明程式內容，新北市做法相同。  
@@ -296,4 +296,6 @@ save(DATAS)
 ```py
 print("finished")
 ```  
-
+   
+   
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　**看下篇→[資料清理與處理：MYSQL](https://github.com/dujun101620/591RENT-PART2-Data_Processing)**
