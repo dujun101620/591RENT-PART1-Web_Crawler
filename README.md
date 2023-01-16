@@ -16,6 +16,7 @@
 
 ## 程式內容──資料取得與儲存：Python  
 以台北市為例說明程式內容，新北市做法相同。  
+
 ### 一、爬取591租屋網台北市約12000~13000筆資料
 #### 1. 匯入模組
 ```py
@@ -256,14 +257,14 @@ request：須包含hearders為User-Agent、device、deviceid。
 DATAS=getData(434)
 ```
   
-  
+### 　　   
 ### 二、匯出csv檔
 使用pandas DataFrame格式，編碼為utf_8_sig，將爬取資料輸出成csv檔。
 ```py
 df=pd.DataFrame(DATAS,columns=["ID","地區","標題","地址","坪數","房型","價格","租金含","押金","樓層","建築種類","緯度","經度","租住說明","房屋守則","冰箱","洗衣機","電視","冷氣","床","衣櫃","網路","電梯","屋主說","網址"])
 df.to_csv("591Taipei.csv",index=False,encoding="utf_8_sig")
 ```
-  
+### 　　   
 ### 三、匯至MYSQL
 使用pymysql模組連接設立好的MYSQL資料庫(591rent)與表格(591rent_taipei)並匯入資料，資料庫使用utfmb4編碼避免亂碼。
 ```py
@@ -291,11 +292,11 @@ def save(Datas):
     
 save(DATAS)
 ```
-  
+### 　　   
 ### 四、回報完成
 ```py
 print("finished")
 ```  
-   
-   
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　**看下篇→[資料清理與處理：MYSQL](https://github.com/dujun101620/591RENT-PART2-Data_Processing)**
+   　  
+### 　　 
+### **看下篇→[資料清理與處理：MYSQL](https://github.com/dujun101620/591RENT-PART2-Data_Processing)**
